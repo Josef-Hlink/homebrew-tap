@@ -5,7 +5,7 @@
 class Twin < Formula
   desc "tmux workspace manager driven by TOML recipes"
   homepage "https://github.com/Josef-Hlink/twin"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   depends_on "fzf"
@@ -13,16 +13,16 @@ class Twin < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Josef-Hlink/twin/releases/download/v0.3.0/twin_0.3.0_darwin_amd64.tar.gz"
-      sha256 "864a7afe8a60d4f34c1243e2c8c824813516c4082a71912d934b04b07c8b5b65"
+      url "https://github.com/Josef-Hlink/twin/releases/download/v0.4.0/twin_0.4.0_darwin_amd64.tar.gz"
+      sha256 "ad42fe2e02a2b51bbad9915f30dd8a303180bb75f36ac4e5a63a3e563c2d2bfe"
 
       define_method(:install) do
         bin.install "twin"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Josef-Hlink/twin/releases/download/v0.3.0/twin_0.3.0_darwin_arm64.tar.gz"
-      sha256 "fc0bf62741c34e08352ad1ad6a0989b9d863e75a14acb408bf9a922f5aeab71d"
+      url "https://github.com/Josef-Hlink/twin/releases/download/v0.4.0/twin_0.4.0_darwin_arm64.tar.gz"
+      sha256 "f48fff989e93acfbb564ef40ae258e0890377acac7ee54316a140c80475f2b68"
 
       define_method(:install) do
         bin.install "twin"
@@ -32,15 +32,15 @@ class Twin < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Josef-Hlink/twin/releases/download/v0.3.0/twin_0.3.0_linux_amd64.tar.gz"
-      sha256 "9ad6bc98e8c5ab5b0c77d2153fe34b17d3c46ac9713a3cf3deef29fb72904077"
+      url "https://github.com/Josef-Hlink/twin/releases/download/v0.4.0/twin_0.4.0_linux_amd64.tar.gz"
+      sha256 "62d63beab913831e8c97a127a383ebc8aa4bf1f11187347837ac9cf38057e684"
       define_method(:install) do
         bin.install "twin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Josef-Hlink/twin/releases/download/v0.3.0/twin_0.3.0_linux_arm64.tar.gz"
-      sha256 "f6d44a80d12be52b02563b93e39297ac8f10009b31aeaa3d23f95d1b8a7467ce"
+      url "https://github.com/Josef-Hlink/twin/releases/download/v0.4.0/twin_0.4.0_linux_arm64.tar.gz"
+      sha256 "e7f96373e62aafaca44ca74ae5ee56a276be32a098c82c832fb23e5791614b54"
       define_method(:install) do
         bin.install "twin"
       end
