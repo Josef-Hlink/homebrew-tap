@@ -5,21 +5,21 @@
 class GhContribs < Formula
   desc "Your GitHub contribution rhythm, in the terminal"
   homepage "https://github.com/Josef-Hlink/gh-contribs"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Josef-Hlink/gh-contribs/releases/download/v0.2.0/gh-contribs_0.2.0_darwin_amd64.tar.gz"
-      sha256 "8fc83b6bc8c3aee440d05918f34a2448ec8614dd217b3f761849a32665471928"
+      url "https://github.com/Josef-Hlink/gh-contribs/releases/download/v0.3.0/gh-contribs_0.3.0_darwin_amd64.tar.gz"
+      sha256 "15c07f3a4c70e9caf57075daac0e774f536ca680d850435e4b8969c10d2650cf"
 
       define_method(:install) do
         bin.install "gh-contribs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Josef-Hlink/gh-contribs/releases/download/v0.2.0/gh-contribs_0.2.0_darwin_arm64.tar.gz"
-      sha256 "53aabf9e302384cb50e15e631ea52c237db554ec87e74bef47f922e162aa4d0a"
+      url "https://github.com/Josef-Hlink/gh-contribs/releases/download/v0.3.0/gh-contribs_0.3.0_darwin_arm64.tar.gz"
+      sha256 "6a29da30ad7dd868112d1185a6a464ef0142b934fd9fb28248c24c4111179b4a"
 
       define_method(:install) do
         bin.install "gh-contribs"
@@ -29,15 +29,15 @@ class GhContribs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Josef-Hlink/gh-contribs/releases/download/v0.2.0/gh-contribs_0.2.0_linux_amd64.tar.gz"
-      sha256 "6a2dc2a817ee82433344693accd293bc7238d54ffb890b7b63017542e2e204f9"
+      url "https://github.com/Josef-Hlink/gh-contribs/releases/download/v0.3.0/gh-contribs_0.3.0_linux_amd64.tar.gz"
+      sha256 "cce99cab92e2f2772c43e59ad2ca0048acf2848a0fe92e74bb03a3b82fc6f8ad"
       define_method(:install) do
         bin.install "gh-contribs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Josef-Hlink/gh-contribs/releases/download/v0.2.0/gh-contribs_0.2.0_linux_arm64.tar.gz"
-      sha256 "15bfd79df77d5c6cf5dc7ff58b6197bcb5deff84ad19a7c832ca230d90e7ec38"
+      url "https://github.com/Josef-Hlink/gh-contribs/releases/download/v0.3.0/gh-contribs_0.3.0_linux_arm64.tar.gz"
+      sha256 "c283d8318b2bbda50711da71d624a99e3d29481212dde44ba9f237b12807fca6"
       define_method(:install) do
         bin.install "gh-contribs"
       end
